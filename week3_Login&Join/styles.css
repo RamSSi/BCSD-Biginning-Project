@@ -1,0 +1,12 @@
+ul {
+  display: flex;
+}  
+
+.container nav {
+  margin-bottom: 150px;
+}
+
+.container .btn:focus {
+  border: none;
+  outline: none;
+}
