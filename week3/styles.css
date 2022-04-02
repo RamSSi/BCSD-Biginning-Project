@@ -2,8 +2,8 @@ ul {
   display: flex;
 }  
 
-.container nav {
-  margin-bottom: 150px;
+.container > .row {
+  margin-bottom: 15%;
 }
 
 .container .btn:focus {
