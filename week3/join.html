@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
+  <title>Join</title>
   
   <!-- CSS -->
   <link rel="stylesheet" href="./styles.css" />
@@ -13,118 +13,150 @@
 
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
+    <div class="container m-0 p-0">
 
-    <!-- Top Navigation -->
-    <div class="row nav">
-      <nav class="col nav justify-content-end nav-pills top-nav">
-        <ul class="list-unstyled">
-          <!-- Nav : Login Button -->
-          <li class="nav-item">
-            <button type="button" class="btn">
-              <a href="login.html" class="nav-link signin-link">Login</a>
-            </button>
-          </li>
-          <!-- Nav : Join Button -->
-          <li class="nav-item">
-            <button type="button" class="btn">
-              <a href="join.html" class="nav-link active signup-link">Join</a>
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <!-- Join Form -->
-    <section class="row justify-content-center join-form">
-      <div class="col-10 col-md-8 col-lg-6 col-xl-4 p-1">
-
-        <!-- Join Title -->
-        <div class="row mb-5 text-center join__title">
-          <h1 class="col">
-            <strong>회원가입</strong>
-          </h1>
-        </div>
-
-        <!-- Join Input Group -->
-        <div class="row mb-5 join__input-group">
-          <form action="" class="col p-0 text-nowrap">
-          
-            <!-- ID -->
-            <div class="form-group row mb-3 align-items-center join__input_id">
-              <label for="input_id" class="col-4 col-md-3 control-lable">아이디</label>
-              <div class="col d-flex justify-content-between flex-nowrap">
-                <div class="col-8">
-                  <input type="text" class="form-control id" id="input_id" placeholder="아이디" aria-lable="사용할 아이디를 입력하세요."/>
-                </div>
-                <button type="button" class="col-4 col-sm-3 btn btn-primary btn-sm">중복확인</button>
-              </div>
-            </div>
-
-            <div class="form-group row mb-3 align-items-center join__input-pw">
-              <label for="input_pw" class="col-4 col-md-3 control-lable">비밀번호</label>
-              <div class="col">
-                <input type="password" class="form-control pw" id="input_pw" placeholder="8~20자의 영문+숫자" aria-lable="사용할 비밀번호를 입력하세요." minlength="8" maxlength="20" />
-              </div>
-            </div>
-
-            <div class="form-group row mb-3 align-items-center join__input_pw-check">
-              <label for="input_pw-check" class="col-4 col-md-3 form-lable">비밀번호 확인</label>
-              <div class="col">
-                <input type="password" class="col form-control pw-check" id="input_pw-check" placeholder="8~20자의 영문+숫자" aria-lable="사용할 비밀번호를 입력하세요." minlength="8" maxlength="20" />
-              </div>
-            </div>
-
-            <div class="form-group row mb-3 align-items-center join__input_student-number">
-              <label for="input_student-number" class="col-4 col-md-3 form-lable">학번</label>
-              <div class="col">
-                <input type="number" class="col form-control student-number" id="input_student-number" placeholder="20XXXXXXXX" aria-lable="학번을 입력하세요." minlength="10" maxlength="10"/>
-              </div>
-            </div>
-
-            <div class="form-group row mb-3 align-items-center join__input-major">
-              <label for="input_major" class="col-4 col-md-3 form-lable">전공</label>
-              <div class="col">
-                <select class="form-select" name="major" id="input_major">
-                  <option value="0">선택안함</option>
-                  <option value="건축·디자인공학부">건축·디자인공학부</option>
-                  <option value="기계공학부">기계공학부</option>
-                  <option value="메카트로닉스공학부">메카트로닉스공학부</option>
-                  <option value="산업경영학부">산업경영학부</option>
-                  <option value="에너지신소재화학공학부">에너지신소재화학공학부</option>
-                  <option value="전기전자정보통신공학부">전기전자정보통신공학부</option>
-                  <option value="컴퓨터공학부">컴퓨터공학부</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="form-group row mb-3 align-items-center join__input_phone-number">
-              <label for="input_phone-number" class="col-4 col-md-3 form-lable">전화번호</label>
-              <div class="col">
-                <input type="tel" class="col form-control phone-number" id="input_phone-number" placeholder="전화번호" aria-lable="전화번호를 입력하세요." />
-                
-              </div>
-            </div>
+      <!-- Top Navigation -->
+      <div class="row m-0 nav">
+        <nav class="col top-nav p-0">
+          <ul class="list-unstyled">
+            <!-- Nav : Login Button -->
+            <li class="nav-item col-6 col-md-1">
+              <button type="button" class="btn">
+                <a href="login.html" class="nav-link active signin-link">Login</a>
+              </button>
+            </li>
+            <!-- Nav : Join Button -->
+            <li class="nav-item col-6 col-md-1">
+              <button type="button" class="btn">
+                <a href="join.html" class="nav-link signup-link">Join</a>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  
+      <!-- Join Form -->
+      <section class="row justify-content-center m-0">
+        <div class="join-form col-11 col-md-8 col-lg-5 p-0">
+  
+          <!-- Join Title -->
+          <div class="row text-center join-title m-0">
+            <h1 class="col">
+              <strong>회원가입</strong>
+            </h1>
+          </div>
+  
+          <!-- Join Input Group -->
+          <div class="row join__input-group m-0">
+            <form action="" class="col p-0 text-nowrap">
             
-          </form>
-        </div>
+              <!-- ID -->
+              <div class="row form-group align-items-center join__input_id m-0">
+                <label for="input_id" class="col-4 col-md-3 p-0 control-lable">아이디</label>
+                <div class="col p-0 id-input">
+                  <div>
+                    <input type="text" class="form-control id" id="input_id" placeholder="아이디(이메일 형식)" />
+                  </div>
+                  <button type="button" class="btn btn-primary btn-sm" id="id-overlap">중복확인</button>
+                </div>
+              </div>
+              <div class="row m-0" >
+                <label for="email-test" class="test-label col-4 col-md-3 p-0">이메일 형식</label>
+                <p class="col-3 m-0" class="test-msg" id="email-test">이메일 형식</p>
+              </div>
+  
+              <!-- Password -->
+              <div class="form-group row m-0 align-items-center join__input-pw">
+                <label for="input_pw" class="col-4 col-md-3 p-0 control-lable">비밀번호</label>
+                <div class="col p-0">
+                  <input type="password" class="form-control pw" id="input_pw" placeholder="8~20자의 영문+숫자" minlength="8" maxlength="20" />
+                </div>
+              </div>
+              <div class="row m-0" >
+                <label for="pw-test" class="test-label col-4 col-md-3 p-0 control-lable">비밀번호 길이</label>
+                <p class="col-3 m-0" class="test-msg" id="pw-test">비밀번호 길이</p>
+              </div>
+  
+              <!-- Password Check -->
+              <div class="form-group row m-0 align-items-center join__input_pw-check">
+                <label for="input_pw-check" class="col-4 col-md-3 p-0 form-lable">비밀번호 확인</label>
+                <div class="col p-0">
+                  <input type="password" class="col form-control pw-check" id="input_pw-check" placeholder="8~20자의 영문+숫자" minlength="8" maxlength="20" />
+                </div>
+              </div>
+              <div class="row m-0" >
+                <label for="pw-check-test" class="test-label col-4 col-md-3 p-0 control-lable">비밀번호 확인</label>
+                <p class="col-3 m-0" class="test-msg" id="pw-check-test">비밀번호 확인</p>
+              </div>
+  
+              <!-- Student Number -->
+              <div class="form-group row m-0 align-items-center join__input_student-number">
+                <label for="input_student-number" class="col-4 col-md-3 p-0 form-lable">학번</label>
+                <div class="col p-0">
+                  <input type="number" class="col form-control student-number" id="input_student-number" placeholder="20XXXXXXXX" minlength="10" maxlength="10"/>
+                </div>
+              </div>
+              <div class="row m-0" >
+                <label for="student-number-test" class="test-label col-4 col-md-3 p-0 control-lable">학번 형식</label>
+                <p class="col-3 m-0" class="test-msg" id="student-number-test">학번 형식</p>
+              </div>
 
-        <!-- Button Group -->
-        <div class="row text-nowrap join__btn-group">
-          <div class="col p-0 d-flex justify-content-between">
-            <div class="col-8 d-grid btn_join">
-              <!-- <button type="button" class="btn btn-primary login" aria-lable="로그인 버튼">로그인</button> -->
-              <a href="#" class="btn btn-primary" role="btn">회원가입</a>
-            </div>
-            <div class="col-3 d-grid btn_reset">
-              <button type="button" class="btn btn-outline-primary reset" aria-lable="초기화 버튼">Reset</button>
-            </div>
+              <!-- Major -->
+              <div class="form-group row m-0 align-items-center join__input-major">
+                <label for="input_major" class="col-4 col-md-3 p-0 form-lable">전공</label>
+                <div class="col p-0">
+                  <select class="form-select" name="major" id="input_major">
+                    <option value="0">선택안함</option>
+                    <option value="건축·디자인공학부">건축·디자인공학부</option>
+                    <option value="기계공학부">기계공학부</option>
+                    <option value="메카트로닉스공학부">메카트로닉스공학부</option>
+                    <option value="산업경영학부">산업경영학부</option>
+                    <option value="에너지신소재화학공학부">에너지신소재화학공학부</option>
+                    <option value="전기전자정보통신공학부">전기전자정보통신공학부</option>
+                    <option value="컴퓨터공학부">컴퓨터공학부</option>
+                    <option value="컴퓨터공학부">고용서비스정책학과</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row m-0" >
+                <label for="major-test" class="test-label col-4 col-md-3 p-0 control-lable">전공 선택</label>
+                <p class="col-3 m-0" class="test-msg" id="major-test">일단 칸 맞추기</p>
+              </div>
+  
+              <!-- Phone Number -->
+              <div class="form-group row m-0 align-items-center join__input_phone-number">
+                <label for="input_phone-number" class="col-4 col-md-3 p-0 form-lable">전화번호</label>
+                <div class="col p-0">
+                  <input type="tel" class="col m-0 form-control phone-number" id="input_phone-number" placeholder="전화번호" />
+                </div>
+              </div>
+              <div class="row m-0" >
+                <label for="phone-number-test" class="test-label col-4 col-md-3 p-0 control-lable"></label>
+                <p class="col-3 m-0" class="test-msg" id="phone-number-test">일단 칸 맞추기</p>
+              </div>
+
+              <!-- Form Button Group -->
+              <div class="row m-0 text-nowrap btn-group">
+                <div class="col p-0 btns d-flex justify-content-between">
+                  <div class="row m-0">
+                    <div class="col-12 col-md-6 p-0 d-grid">
+                      <button type="submit" class="btn btn-primary" id="join-btn">회원가입</a>
+                    </div>
+                    <div class="col-12 col-md-6 p-0 d-grid">
+                      <button type="button" class="btn btn-outline-primary" id="cancel-btn">취소</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-  </section>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="./join.js"></script>
 </body>
 </html>
