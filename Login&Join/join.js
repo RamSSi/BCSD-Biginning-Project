@@ -30,13 +30,29 @@ input_id.addEventListener("blur", () => testEmailFormat(input_id.value));
 function inputPassword(pw_value) {
   let pw_msg = document.getElementById("pw-test");
   
-  if (pw_value == "") {
-    pw_msg.style.color = "#ee1c1c";
-    pw_msg.innerText = "비밀번호를 입력하세요.";
+  // if (pw_value == "") {
+  //   pw_msg.style.color = "#ee1c1c";
+  //   pw_msg.innerText = "비밀번호를 입력하세요.";
+  // }
+  // else {
+  //   pw_msg.innerText = "";
+  //   // 비밀번호 유효성 검사 (비밀번호 길이가 8~20자 인지)
+    checkLength(pw_value, pw_msg);
+    // if (pw_value.length < 8) {
+    //   pw_msg.style.color = "#ee1c1c";
+    //   pw_msg.innerText = "8~20자를 입력하세요.";
+    // }
+  // }
+}
+function checkLength(value, msg) {
+  if (value.length < 8) {
+    msg.style.color = "#ee1c1c";
+    msg.innerText = "8~20자를 입력하세요.";
+    return false;
   }
   else {
-    pw_msg.innerText = "";
-    // 비밀번호 유효성 검사 (비밀번호 길이가 8~20자 인지)
+    msg.innerText = "";
+    return true;
   }
 }
 input_pw.addEventListener("blur", () => inputPassword(input_pw.value));
@@ -46,9 +62,9 @@ input_pw.addEventListener("blur", () => inputPassword(input_pw.value));
 function testPassword(pw, pw_check) {
   let pw_check_msg = document.getElementById("pw-check-test");
 
-  if (pw_check == "") {
-    pw_check_msg.style.color = "#ee1c1c";
-    pw_check_msg.innerText = "비밀번호를 다시 입력해주세요.";
+  let check_length = checkLength(pw_check, pw_check_msg);
+  
+  if (!check_length) {
   }
   else {
     if (pw != pw_check) {
@@ -56,9 +72,11 @@ function testPassword(pw, pw_check) {
       pw_check_msg.innerText = "비밀번호가 동일하지 않습니다.";
     }
     else {
+      pw_check_msg.style.color = "#129b29";
       pw_check_msg.innerText = "비밀번호가 동일합니다.";
     }
   }
+    
 }
 input_pw_check.addEventListener("blur", () => testPassword(input_pw.value, input_pw_check.value))
 
@@ -77,6 +95,12 @@ function testStudentNumber(stu_num) {
   }
 }
 input_student_number.addEventListener("blur", () => testStudentNumber(input_student_number.value))
+
+
+// 휴대전화번호 자동 수정
+function addHyphen(phone_num) {
+
+}
 
 
 // 취소 버튼
