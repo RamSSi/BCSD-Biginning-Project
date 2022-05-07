@@ -1,0 +1,44 @@
+:root {
+  --red-color: #FF0000;
+  --yellow-color: #FFFF00;
+  --blue-color: #0000FF;
+}
+
+
+
+body {
+  font-family: sans-serif;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px black solid;
+  margin: 10px;
+}
+
+#wrapper {
+  width: 1000px;
+  height: 300px;
+  margin: 50px;
+  padding: 20px;
+  display: flex;
+  background-color: gray;
+}
+
+.color#A {
+  background-color: var(--red-color);
+}
+
+.color#B {
+  background-color: var(--yellow-color);
+}
+
+.color#C {
+  background-color: var(--blue-color);
+}
