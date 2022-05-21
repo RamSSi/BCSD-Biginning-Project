@@ -1,0 +1,69 @@
+:root {
+  --font-sm: 13px;
+  --font-md: 16px;
+  --font-lg: 20px;
+}
+
+nav {
+  background-color: rgb(172, 213, 249);
+}
+
+#title {
+  text-align: center;
+  color: #00000060;
+  font-size: 3rem;
+}
+
+.row {
+  justify-content: center;
+}
+
+#nav-list {
+  flex-direction: row;
+  justify-content: center;
+}
+
+#nav-list li {
+  text-align: center;
+  width: 80px;
+  font-size: 13px;
+}
+
+#login-container,
+#join-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0;
+  padding: 3rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+#login-title,
+#join-title {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+#login-form form,
+#join-form form {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#login-form form > div,
+#join-form form > div {
+  margin: 1rem 0;
+}
+
+
+@media (min-width: 1028px) {
+  html {
+    font-size: var(--font-lg);
+  }
+}
