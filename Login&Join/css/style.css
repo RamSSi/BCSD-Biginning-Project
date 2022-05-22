@@ -10,8 +10,9 @@ nav {
 
 main .container > img {
   display: block;
-  width: 100%;
+  width: 300px;
   margin-top: 50px;
+  margin: 50px auto;
   border-radius: 30px;
 }
 
