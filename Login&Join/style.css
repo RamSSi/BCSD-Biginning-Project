@@ -8,6 +8,13 @@ nav {
   background-color: rgb(172, 213, 249);
 }
 
+main .container > img {
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  border-radius: 30px;
+}
+
 #title {
   text-align: center;
   color: #00000060;
@@ -58,12 +65,59 @@ nav {
 
 #login-form form > div,
 #join-form form > div {
-  margin: 1rem 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0.8rem 0;
 }
 
+#login-form form button,
+#join-form form button {
+  margin: 1.2rem 0;
+  box-shadow: 1px 1px 3px #b1b1b160;
+  background-color: rgb(172, 213, 249);
+  color:rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+}
+
+#join-form form .btn-group {
+  justify-content: space-between;
+}
+
+#join-form form button:first-child {
+  margin-right: 0.5rem;
+}
+
+#join-form form button:last-child {
+  background-color: rgb(237, 245, 254);
+  color:rgba(0, 0, 0, 0.5);
+}
+
+#login-form form button:hover,
+#join-form form button:hover {
+  margin-top: 1.2rem;
+  background-color: rgb(115, 187, 250);
+  box-shadow: 3px 3px 10px #74737360;
+  color: #fff;
+}
+
+#join-form form > div {
+  margin: 0.5rem 0;
+}
+
+@media (min-width: 578px) {
+  html {
+    font-size: var(--font-md);
+  }
+}
 
 @media (min-width: 1028px) {
   html {
     font-size: var(--font-lg);
   }
+  #login-form form > div {
+    display: flex;
+    justify-content: center;
+  }
 }
+
